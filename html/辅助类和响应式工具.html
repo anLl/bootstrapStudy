@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>辅助类和响应式工具</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        .wFloat{
+            width:200px;
+            background: #ccc;
+            border:1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <p class="text-muted">辅助类-前景色</p>
+    <p class="text-danger">辅助类</p>
+    <p class="text-info">辅助类</p>
+    <p class="text-success">辅助类</p>
+
+    <p class="bg-danger">辅助类-背景色</p>
+    <p class="bg-success">辅助类-背景色</p>
+    <p class="bg-info">辅助类-背景色 <span class="caret" style="color:red"></span></p>
+
+    <!--关闭按钮-->
+    <button class="close">&times;</button>
+
+    <!--浮动-->
+    <div class="pull-left wFloat">1</div>
+    <div class="pull-left wFloat">2</div>
+    <!--清除浮动-->
+    <div class="clearfix"></div>
+    <div class="pull-left wFloat">1</div>
+    <div class="clearfix"></div>
+    <div class="wFloat">2</div>
+
+
+    <div class="center-block" style="width: 300px;height: 60px;background: black;color: white">块级居中</div>
+
+    <div class="clearfix"></div>
+    <div class="visible-xs-block wfloat">//超小屏幕激活<mark>显示</mark></div>
+     <div class="hidden-xs wfloat">**超小屏幕激活<mark>隐藏</mark></div>
+
+
+</div>
+
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>
